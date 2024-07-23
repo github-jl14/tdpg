@@ -3,4 +3,4 @@ TDPG (Temporal Dynamic Password Generator) is a password generator that uses dif
 
 
 # Test the progress
-https://github-jl14.github.com/tdpg
+https://github-jl14.github.io/tdpg/
