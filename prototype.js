@@ -19,7 +19,7 @@ function time() {
 }
 
 function browser() {
-  document.getElementById("ver").innerText = navigator.appVersion
+  document.getElementById("ver").innerText = navigator.userAgent
 }
 
 
