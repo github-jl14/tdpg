@@ -103,9 +103,6 @@ function generate() {
   document.getElementById("gentxtbox").value = resultString;
 }
 
-// Example usage
-document.getElementById("genpass").addEventListener("click", generate)
-
 // Testing
 time();
 console.log(chars(spec));
