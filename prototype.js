@@ -1,7 +1,14 @@
 let spec = ["@", "#", "$", "&", "%"];
 
 let h, m, s, l, pl;
-const step = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+
+var step;
+
+function fstep() {
+  step = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+  
+  return step;
+}
 
 function chars(arr) {
   if (arr.length === 0) {
@@ -75,6 +82,7 @@ function shuffleArray(array) {
 }
 
 function generate() {
+  fstep(); // generate a new `step` var
   staticprocessor();
   
   // Generate values
@@ -101,9 +109,15 @@ function generate() {
   console.log(resultString);
   
   document.getElementById("gentxtbox").value = resultString;
+  
+  // reset values of spec
+  spec = ["@", "#", "$", "&", "%"];
 }
 
+document.getElementById("genpass").addEventListener("click", generate)
+
 // Testing
+generate()
 console.log(chars(spec));
 console.log(randlet());
 console.log(flang());
