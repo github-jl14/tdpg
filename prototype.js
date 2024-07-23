@@ -104,7 +104,6 @@ function generate() {
 }
 
 // Testing
-time();
 console.log(chars(spec));
 console.log(randlet());
 console.log(flang());
