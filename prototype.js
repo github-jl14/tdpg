@@ -117,7 +117,6 @@ function generate() {
 document.getElementById("genpass").addEventListener("click", generate)
 
 // Testing
-generate()
 console.log(chars(spec));
 console.log(randlet());
 console.log(flang());
